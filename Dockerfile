@@ -18,4 +18,4 @@ WORKDIR /usr/src/myapp/yanagishima-21.0
 
 EXPOSE 8080
 
-ENTRYPOINT ["/usr/src/myapp/yanagishima-21.0/bin/yanagishima-start.sh"]
+ENTRYPOINT ["sh", "/usr/src/myapp/yanagishima-21.0/bin/yanagishima-start.sh"]
