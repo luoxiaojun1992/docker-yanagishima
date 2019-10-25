@@ -18,4 +18,4 @@ WORKDIR /usr/src/myapp/yanagishima-21.0
 
 EXPOSE 8080
 
-CMD ["bash", "/usr/src/myapp/yanagishima-21.0/bin/yanagishima-start.sh"]
+ENTRYPOINT ["/usr/src/myapp/yanagishima-21.0/bin/yanagishima-start.sh"]
