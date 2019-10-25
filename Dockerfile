@@ -1,4 +1,4 @@
-FROM openjdk:7u211-jdk-alpine3.9
+FROM openjdk:8-jdk-alpine3.9
 
 MAINTAINER luoxiaojun1992 <luoxiaojun1992@sina.cn>
 
