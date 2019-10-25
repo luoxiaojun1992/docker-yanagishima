@@ -1,4 +1,4 @@
-FROM 14-jdk-alpine3.10
+FROM openjdk:14-jdk-alpine3.10
 
 MAINTAINER luoxiaojun1992 <luoxiaojun1992@sina.cn>
 
