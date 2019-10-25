@@ -1,4 +1,4 @@
-FROM openjdk:12-jdk-alpine3.9
+FROM mcr.microsoft.com/java/jdk:11u5-zulu-alpine
 
 MAINTAINER luoxiaojun1992 <luoxiaojun1992@sina.cn>
 
