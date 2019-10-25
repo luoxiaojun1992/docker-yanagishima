@@ -21,4 +21,4 @@ WORKDIR /usr/src/myapp/yanagishima-${INSTALL_VERSION}
 
 EXPOSE 8080
 
-CMD ["/usr/src/myapp/yanagishima-${INSTALL_VERSION}/bin/yanagishima-start.sh"]
+CMD ["/usr/src/myapp/yanagishima/build/distributions/yanagishima-${INSTALL_VERSION}/bin/yanagishima-start.sh"]
