@@ -5,6 +5,7 @@ MAINTAINER luoxiaojun1992 <luoxiaojun1992@sina.cn>
 RUN apk add git
 RUN apk add nodejs
 RUN apk add npm
+RUN apk add bash
 
 RUN mkdir -p /usr/src/myapp
 
