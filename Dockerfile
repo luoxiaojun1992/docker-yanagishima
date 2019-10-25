@@ -6,6 +6,8 @@ RUN apk add git
 RUN apk add nodejs
 RUN apk add npm
 
+RUN mkdir -p /usr/src/myapp
+
 WORKDIR /usr/src/myapp
 
 COPY ./*.zip .
@@ -16,4 +18,4 @@ WORKDIR /usr/src/myapp/yanagishima-21.0
 
 EXPOSE 8080
 
-CMD ["/usr/src/myapp/yanagishima-21.0/bin/yanagishima-start.sh"]
+CMD ["bash", "/usr/src/myapp/yanagishima-21.0/bin/yanagishima-start.sh"]
