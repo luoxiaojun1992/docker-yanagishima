@@ -1,4 +1,4 @@
-FROM openjdk:8u131-jre-alpine
+FROM openjdk:8u181-jre-alpine3.8
 
 MAINTAINER luoxiaojun1992 <luoxiaojun1992@sina.cn>
 
