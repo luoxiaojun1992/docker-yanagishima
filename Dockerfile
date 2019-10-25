@@ -10,12 +10,12 @@ RUN apk add npm
 
 WORKDIR /usr/src/myapp
 
-RUN git clone https://github.com/yanagishima/yanagishima.git
-RUN cd yanagishima
-RUN git checkout -b ${INSTALL_VERSION} refs/tags/${INSTALL_VERSION}
-RUN ./gradlew distZip
-RUN cd build/distributions
-RUN unzip yanagishima-${INSTALL_VERSION}.zip
+RUN git clone https://github.com/yanagishima/yanagishima.git \
+  && cd yanagishima \
+  && git checkout -b ${INSTALL_VERSION} refs/tags/${INSTALL_VERSION} \
+  && ./gradlew distZip \
+  && cd build/distributions \
+  && unzip yanagishima-${INSTALL_VERSION}.zip
 
 WORKDIR /usr/src/myapp/yanagishima-${INSTALL_VERSION}
 
