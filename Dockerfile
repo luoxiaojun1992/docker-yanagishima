@@ -4,6 +4,7 @@ MAINTAINER luoxiaojun1992 <luoxiaojun1992@sina.cn>
 
 ENV INSTALL_VERSION=21.0
 
+RUN apk add git
 RUN apk add nodejs
 RUN apk add npm
 
